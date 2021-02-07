@@ -3,8 +3,8 @@ from django.http import HttpResponse
 
 
 def home(request):
-    return render(request, 'generator/home.html', {'password': 'rty67rjhvb87'})
+    return render(request, 'generator/home.html')
 
 
-def hello_fun(request):
-    return HttpResponse('My name is Sergey...')
+def password(request):
+    return render(request, 'generator/password.html')
